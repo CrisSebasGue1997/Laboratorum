@@ -37,6 +37,7 @@ export const courseReducer = (state={},action)=>{
             courses:action.courses
         }
     }
+    
     if(action.type ===GET_COURSE){
         return{
             ...state,
@@ -47,10 +48,11 @@ export const courseReducer = (state={},action)=>{
 }
 export const teacherReducer = (state={},action)=>{
     if(action.type ===GET_ALL_TEACHERS){
-        return{
+        return {
             ...state,
             teachers:action.teachers
         }
+        
     }
     
     return state
